@@ -1,0 +1,12 @@
+# Site settings
+title: Iuri Madeira
+email: iurimadeira@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  In this blog we'll talk about software development, business and technology.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://iurimadeira.com" # the base hostname & protocol for your site
+
+github_username:  iurimadeira
+
+# Build settings
+markdown: kramdown
