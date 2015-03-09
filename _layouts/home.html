@@ -21,7 +21,7 @@ Description: Awesome dude, awesome life
 <body class="home-template" itemscope itemtype="http://schema.org/WebPage">
 <header class="notepad-site-head">
     <div class="notepad-site-head-menu">
-        <a class="notepad-blog-logo" href="{{ site.url }}"><img src="{{ site.url }}/images/{{ site.logo }}" alt="Blog Logo" /></a>
+        <!-- <a class="notepad-blog-logo" href="{{ site.url }}"><img src="{{ site.url }}/images/{{ site.logo }}" alt="Blog Logo" /></a> -->
         
         
         <div class="notepad-blog-menu">      
@@ -29,6 +29,15 @@ Description: Awesome dude, awesome life
         <a href="#"><i class="fa fa-bars"></i></a>
     </div>
     <ul class="notepad-menu">
+
+        {% if page.lang == 'br' %}
+                <a href="#" style="color: #FF0000">br </a>| 
+                <a href="/en" style="color: #000;">en</a>
+        {% else %}
+                <a href="/br" style="color: #000;">br</a> |
+                <a href="#" style="color: #FF0000">en </a>
+        {% endif %}
+
         <li class="notepad-mobile-close-btn show-for-small text-right">
             <a href="#"><i class="fa fa-times"></i></a>
         </li>
