@@ -41,6 +41,7 @@ Description: Awesome dude, awesome life
     </div>
     <ul class="notepad-menu">
 
+        <li>
             {% if page.lang == 'br' %}
                 <a href="#" style="color: #FF0000">br </a>| 
                 <a href="{{ page.id | replace_first:'br','en' }}" style="color: #FFF;">en</a>
@@ -48,6 +49,7 @@ Description: Awesome dude, awesome life
                 <a href="{{ page.id | replace_first:'en','br' }}" style="color: #FFF;">br</a> |
                 <a href="#" style="color: #FF0000">en </a>
             {% endif %}
+        </li>
 
         <li class="notepad-mobile-close-btn show-for-small text-right">
             <a href="#"><i class="fa fa-times"></i></a>
