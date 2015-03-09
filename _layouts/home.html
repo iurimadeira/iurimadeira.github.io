@@ -1,20 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!--
-====================================================
-    __  ____  ______________  _______ ___    __ 
-   / / / /  |/  / ____/   \ \/ / ___//   |  / / 
-  / /_/ / /|_/ / /_  / /| |\  /\__ \/ /| | / /  
- / __  / /  / / __/ / ___ |/ /___/ / ___ |/ /___
-/_/ /_/_/  /_/_/   /_/  |_/_//____/_/  |_/_____/
-                                                     
-====================================================
-Owner Name: Hossain Mohammad Faysal
-Profile: https://www.facebook.com/hmfaysal
-Version: 1.1
-Description: Awesome dude, awesome life
-====================================================
--->
+
 <head>
 {% include head.html %}
 </head>
@@ -30,19 +16,10 @@ Description: Awesome dude, awesome life
     </div>
     <ul class="notepad-menu">
 
-    <li>
-        {% if page.lang == 'br' %}
-                <a href="#" style="color: #FF0000">br </a>| 
-                <a href="/en" style="color: #000;">en</a>
-        {% else %}
-                <a href="/br" style="color: #000;">br</a> |
-                <a href="#" style="color: #FF0000">en </a>
-        {% endif %}
-    </li>
-
-        <li class="notepad-mobile-close-btn show-for-small text-right">
+         <li class="notepad-mobile-close-btn show-for-small text-right">
             <a href="#"><i class="fa fa-times"></i></a>
         </li>
+       
 {% for link in site.links %}
             <li>{% if link.external %}
             <a href="{{ link.url }}">{{ link.title }}</a>
@@ -51,6 +28,14 @@ Description: Awesome dude, awesome life
             {% endif %} </li>
 {% endfor %}            
            <li><a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+
+            <li>
+            {% if page.lang == 'br' %}
+                    <a href="/en" >English</a>
+            {% else %}
+                    <a href="/br">Português</a>                    
+            {% endif %}
+        </li>
     </ul>
 </div>
         <div class="clearfix"></div>
