@@ -5,30 +5,30 @@ disqus_shortname: iurimadeira
 share:            true
 dropcap:          true
 # Change url to your domain. Leave localhost server or blank when working locally.
-# or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
+# or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
 url:        	  ''
 
 # Owner/author information
 owner:
   name:           Iuri Madeira
-  avatar:         hmfaysal.jpg
+  avatar:         iuri.jpg
   email:          iurimadeira@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    Brazilian Software Developer
   # Social networking links used in footer. Update and remove as you like.
   #twitter:        iurimadeira
   facebook:       iurimadeira
-  github:         iurimadeira      
+  github:         iurimadeira
   #instagram:      iurimadeira
   # For Google Authorship https://plus.google.com/authorship
   #google_plus:    https://plus.google.com/u/0/102602916593522619858
 
 # Analytics and webmaster tools stuff goes here
 #google_analytics:   UA-39365944-7
-#google_verify:      
+#google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-#bing_verify:         
+#bing_verify:
 
 # Links to include in footer navigation
 # For external links add external: true
@@ -59,7 +59,7 @@ kramdown:
   use_coderay: false
 
   coderay:
-    coderay_line_numbers: 
+    coderay_line_numbers:
     coderay_line_numbers_start: 1
     coderay_tab_width: 4
     coderay_bold_every: 10
