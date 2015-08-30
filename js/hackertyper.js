@@ -3,10 +3,10 @@ $(function(){
   Typer.file='code.txt';
   Typer.init();
 
-  var hackerTyper = setTimeout(hackerTyperLoop, 50);
+  var hackerTyper = setTimeout(hackerTyperLoop, 30);
   function hackerTyperLoop() {
     Typer.addText();
-    hackerTyper = setTimeout(hackerTyperLoop, 50); // repeat myself
+    hackerTyper = setTimeout(hackerTyperLoop, 30); // repeat myself
   };
 
   var changeDiv = setTimeout(changeDivLoop, 5000);
@@ -55,7 +55,7 @@ var Typer={
     Typer.index = 0;
     $('#consoleWrapper').append('<div id="console' + Typer.divId + '" class="outer"></div>');
     $('#console' + Typer.divId).css('padding-top', function(){
-      return Math.floor((Math.random() * 100) + 1) 
+      return Math.floor((Math.random() * 800) + 1) 
     });
 
     $('#console' + Typer.divId).css('padding-left', function(){

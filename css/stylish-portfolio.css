@@ -173,8 +173,12 @@ hr.small {
   z-index: 100;
 }
 
+.header h3{
+  color: #fff;
+}
+
 .header, .outer{
-    font-family: Helvetica,Arial,sans-serif;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 0.9em;
     color: #5D5B5B;
     display: table;
